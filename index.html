@@ -4,14 +4,8 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-
-  </head>
-  <body>
-    <div class="wrapper">
-        <div class="price">123</div>
-        <div class="order">xs12345678</div>
-    </div>
-    <script>
+    <!-- <script>
+      window.onload = function () {
         let body = document.querySelector("body");
         let script = document.createElement("script");
         let price = document.querySelector(".price").textContent;
@@ -20,6 +14,14 @@
         let bid = "86_1";
         script.src = `https://www.conn.tw/t/pj?mcode=${mcode}&bid=${bid}&oid=${order}&amount=${price}`;
         body.appendChild(script);
-    </script>
+      };
+    </script> -->
+  </head>
+  <body>
+    <div class="wrapper">
+      <div class="price">123</div>
+      <div class="order">xs12345678</div>
+    </div>
+    <script src="https://www.conn.tw/t/pj?mcode=8nmA16Stg2zJ9Q&bid=86_1&oid=aa12345678&amount=100"></script>
   </body>
 </html>
