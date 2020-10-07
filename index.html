@@ -5,14 +5,23 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
     <script>
-      let body = document.querySelector("body");
-      let script = document.createElement("script");
-      let mcode = "8nmA16Stg2zJ9Q";
-      let bid = "86_1";
-      script.src = `https://www.conn.tw/t/pj?mcode=${mcode}&bid=${bid}&oid=123`;
-      script.defer = true;
-      body.appendChild(script);
+      window.onload = function () {
+        let body = document.querySelector("body");
+        let script = document.createElement("script");
+        let price = document.querySelector(".price").textContent;
+        let order = document.querySelector(".order").textContent;
+        let mcode = "8nmA16Stg2zJ9Q";
+        let bid = "86_1";
+        script.src = `https://www.conn.tw/t/pj?mcode=${mcode}&bid=${bid}&oid=${order}&amount=${price}`;
+        script.defer = true;
+        body.appendChild(script);
+      };
     </script>
   </head>
-  <body></body>
+  <body>
+    <div class="wrapper">
+        <div class="price">123</div>
+        <div class="order">xs12345678</div>
+    </div>
+  </body>
 </html>
